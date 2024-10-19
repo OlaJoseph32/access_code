@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acces Code</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="first-section">
+        <!-- first section -->
+        <div class="container">
+            <img src="./assets/images/loGos-removebg-preview.png" alt="">
+            <p>Powered by ByteBuilder</p>
+        </div>
+
+        <!-- Second container -->
+        <div class="container2">
+            <div class="welcome-con">
+                <img src="./assets/images/loGos-removebg-preview.png" alt="">
+                <h2>Welcome!</h2>
+                <button type="button" class="text-center">Create an account</button>
+                <button type="button" class="text-center bttn">Already have an account?</button>
+                <p class="text-center">Powered by ByteBuilders</p>
+            </div>
+        </div>
+
+        <!-- Third section -->
+        <div class="container3">
+            <div class="sign-up-con">
+                <img src="./assets/images/nbvc-removebg-preview.png" alt="logo">
+                <div class="profile-pic">
+                    <i class="fa-solid fa-user fa-lg" style="color: #696969;"></i>
+                </div>
+            </div>
+            <form action="signup" method="post">
+                <div class="input-container">
+                    <input type="text" id="firstname" name="firstname" placeholder=" " required>
+                    <label for="firstname" id="firstname" name="firstname">First Name</label>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="lastname" name="lastname" placeholder=" " required> 
+                    <label for="lastname" id="lastname" name="lastname">Last Name</label> 
+                </div>
+                <div class="input-container">
+                    <input type="email" id="email" name="email" placeholder=" " required> 
+                    <label for="email" id="email" name="email">Email Address</label>
+                </div>
+                <div class="input-container">
+                    <input type="number" id="number" name="number" placeholder=" " required> 
+                    <label for="number" id="number" name="number">Phone Number</label>
+                </div>
+                <div class="input-container">
+                    <input type="username" id="username" name="username" placeholder=" " required> 
+                    <label for="username" id="username" name="username">Username</label>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="password" name="password" placeholder=" " required> 
+                    <label for="password" id="password" name="password">Create password</label>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="confirmpassword" name="confirmpassword" placeholder=" " required> 
+                    <label for="password" id="confirmpassword" name="confirmpassword">Confirm password</label> 
+                </div>
+
+                <button type="submit" class="bttn" >Create account</button>
+            </form>
+        </div>
+
+        <!-- Fourth section -->
+        <div class="container4">
+            <div class="phone-verification-page">
+                <div class="top">
+                    <h2>Phone verification</h2>
+                    <p>We sent you a 6-digit code on your registered mobile number to verify.</p>
+                    <div class="code-con">
+                        <input type="number" oninput="this.value=this.value.slice(0,1)">
+                        <input type="number" oninput="this.value=this.value.slice(0,1)">
+                        <input type="number" oninput="this.value=this.value.slice(0,1)">
+                        <input type="number" oninput="this.value=this.value.slice(0,1)">
+                        <input type="number" oninput="this.value=this.value.slice(0,1)">
+                        <input type="number" oninput="this.value=this.value.slice(0,1)">
+                    </div>
+                    <h3>Resend code in <span>00:57 sec</span></h3>
+                </div>
+                <button type="submit" class="btttn">Submit</button> <br>
+                <a href="#" class="text-center">Email Verification</a>
+            </div>
+        </div>
+
+
+        <!-- Fith section -->
+        <div class="container5">
+            <div class="login-page">
+                <img src="./assets/images/nbvc-removebg-preview.png" alt="logo">
+                <div class="welcome-back">
+                    <h2>Welcome Back</h2>
+                    <h5>Enter your account information to login</h5>
+                    <div class="input-container">
+                        <input type="username" id="username" name="username" placeholder=" " required> 
+                        <label for="username" id="username" name="username">Username</label>
+                    </div>
+                    <div class="input-container" id="input">
+                        <input type="password" id="password" name="password" placeholder=" " required> 
+                        <label for="password" id="password" name="password">Password</label>
+                    </div>
+                    <a href="#">Forgot Password</a>
+                </div>
+                <button type="submit" class="bttn">Submit</button> <br>
+            </div>
+        </div>
+
+        <!-- Sixth section -->
+        <div class="container6">
+            <div class="forgot-pass">
+                <h2>Forgot Password</h2>
+                <p>Enter your registered Email ID to reset your password</p>
+                <div class="input-container">
+                    <input type="email" id="email" name="email" placeholder=" " required> 
+                    <label for="email" id="email" name="email">Email ID</label>
+                </div>
+                <div class="dv">
+                    <button type="submit" class="btttn">Submit</button> <br>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Seventh section -->
+        <div class="container6">
+            <div class="OTP-verification-page">
+                <div class="top">
+                    <h2>OTP verification</h2>
+                    <p>We sent you a 6-digit code on your registered mobile number to verify.</p>
+                    <div class="code-con">
+                        <input type="number" oninput="this.value=this.value.slice(0,1)">
+                        <input type="number" oninput="this.value=this.value.slice(0,1)">
+                        <input type="number" oninput="this.value=this.value.slice(0,1)">
+                        <input type="number" oninput="this.value=this.value.slice(0,1)">
+                        <input type="number" oninput="this.value=this.value.slice(0,1)">
+                        <input type="number" oninput="this.value=this.value.slice(0,1)">
+                    </div>
+                    <h3>Resend code in <span>00:57 sec</span></h3>
+                </div>
+                <button type="submit" class="btttn">Verify</button> <br>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

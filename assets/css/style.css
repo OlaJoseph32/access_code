@@ -1,0 +1,529 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+img{
+    max-width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+
+.first-section{
+    /* padding-top: 3rem; */
+    display: grid;
+    gap: 2.5rem;
+    padding: 4rem 0px 30px 0px;
+    max-width: 1300px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+/* Section one */
+.container{
+    border-radius: 20px;
+    height: 600px;
+    width: 300px;
+    background: url(./background.jfif) no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p{
+    color: white;
+    font-weight: 500;
+    font-size: .8rem;
+    margin-top: 7rem;
+}
+/* Section two */
+.container2{
+    border-radius: 20px;
+    height: 600px;
+    width: 300px;
+    background: url(./gate\ access.jpg) no-repeat;
+}
+
+.welcome-con{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+.welcome-con::before{
+    content: "";
+    background: rgba(0,0,0,0.8);
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: inherit;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.welcome-con::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: -1;
+    border-radius: 20px;
+}
+.welcome-con h2{
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    color: white;
+}
+.welcome-con button{
+    cursor: pointer;
+    color: rgb(238, 193, 15);
+    font-size: .9rem;
+    padding: 15px 30px;
+    font-weight: 900;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: solid 1px white;
+}
+.welcome-con .bttn{
+    cursor: pointer;
+    color: white;
+    font-size: .9rem;
+    padding: 15px 30px;
+    font-weight: 900;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: solid 1px white;
+    background-color: rgba(206, 206, 217, 0.3);
+}
+
+.welcome-con p{
+    color: white;
+    font-size: .7rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+/* Section three */
+.container3{
+    border-radius: 20px;
+    height: 600px;
+    width: 300px;
+    background: white;
+    border: solid 2px gray;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.sign-up-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-con img{
+    height: auto;
+    width: 170px;
+    margin: 0px 0 10px 0;
+}
+
+.sign-up-con .profile-pic{
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    border: solid 2px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px 0 20px 0;
+}
+form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the input and label */
+.input-container {
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+}
+  
+/* Input field styling */
+.input-container input {
+    width: 100%;
+    padding: 5px 5px 10px 5px;
+    padding-top: 5px; /* Space for the label */
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+  
+/* Label styling */
+.input-container label {
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    background-color: white; /* Ensure the label appears above the border */
+    padding: 0 5px; /* Padding to avoid text touching the border */
+    font-size: .8rem;
+    color: #999;
+    transition: 0.3s ease;
+    pointer-events: none;
+
+}
+  
+/* Input when focused or with content */
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 12px;
+    color: #f58026;
+}
+  
+/* Border change on focus */
+.input-container input:focus {
+    border-color: #f58026;
+}
+  
+form .bttn{
+    cursor: pointer;
+    color: white;
+    font-size: .9rem;
+    padding: 10px 35px;
+    font-weight: 700;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: solid 1px white;
+    background-color: #f58026;
+}
+
+
+/* Section four */
+.container4{
+    border-radius: 20px;
+    height: 600px;
+    width: 300px;
+    background: white;
+    border: solid 2px gray;
+    padding: 20px;
+}
+
+.phone-verification-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.phone-verification-page h2{
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 30px 0px 5px 0px;
+}
+.phone-verification-page p{
+    font-size: .7rem;
+    font-weight: 700;
+    color: #999;
+    line-height: 2;
+    padding: 5px 0px 15px 0px;
+}
+.code-con{
+    display: flex;
+    gap: .4rem;
+    padding: 0px 0px 20px 0px;
+
+}
+.code-con input{
+    height: 35px;
+    width: 35px;
+    padding: 3px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    background-color: rgb(233, 229, 229);
+    outline: none;
+    border: solid .5px gray;
+    text-align: center;
+}
+
+/* Hide the number input arrows/spinners */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.phone-verification-page h3{
+    font-size: .8rem;
+    font-weight: 700;
+    color: #999;
+    line-height: 2;
+    padding: 0px 0px 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.phone-verification-page span{
+    color: blue;
+}
+
+.btttn{
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+    font-weight: 700;
+    width: 80%;
+    margin: 30px 0px 0px 0px;
+    border-radius: 5px;
+    border: solid 1px white;
+    background-color: #e94509;
+}
+.phone-verification-page a{
+    font-size: .8rem;
+    text-decoration: none;
+    color: #f58026;
+    margin-top: -.8rem;
+    font-weight: 700;
+}
+.phone-verification-page a:hover{
+    text-decoration: underline;
+}
+
+/* Section five */
+.container5{
+    border-radius: 20px;
+    height: 600px;
+    width: 300px;
+    background: white;
+    border: solid 2px gray;
+    padding: 10px;
+}
+
+.login-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-page img{
+    height: auto;
+    width: 170px;
+    margin: 0px 0 10px 0;
+}
+.login-page h2{
+    font-size: 1.4rem;
+}
+.login-page h5{
+    font-size: .8rem;
+    font-weight: 700;
+    color: #999;
+    padding: 0;
+}
+
+.login-page a{
+    text-decoration: none;
+    color: rgb(127, 127, 222);
+    font-size: .7rem;
+    text-align: end;
+    font-weight: 800;
+    padding-left: 5px;
+}
+.login-page a:hover{
+    text-decoration: underline;
+}
+#input{
+    margin-bottom: -.6rem;
+}
+.login-page .bttn{
+    cursor: pointer;
+    color: white;
+    font-size: .9rem;
+    padding: 10px 35px;
+    font-weight: 700;
+    margin: 20px 0;
+    width: 70%;
+    border-radius: 5px;
+    border: solid 1px white;
+    background-color: #f58026;
+}
+
+/* Section Six */
+.container6{
+    border-radius: 20px;
+    height: 600px;
+    width: 300px;
+    background: white;
+    border: solid 2px gray;
+    padding: 20px;
+}
+
+.forgot-pass h2{
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 30px 0px 5px 0px;
+}
+.forgot-pass p{
+    font-size: .7rem;
+    font-weight: 700;
+    color: #999;
+    line-height: 2;
+    padding: 5px 0px 15px 0px;
+}
+
+.dv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forgot-pass .btttn{
+    margin-top: -.2rem;
+}
+
+
+/* Section Seven */
+.container4{
+    border-radius: 20px;
+    height: 600px;
+    width: 300px;
+    background: white;
+    border: solid 2px gray;
+    padding: 20px;
+}
+
+.OTP-verification-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.OTP-verification-page h2{
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 30px 0px 5px 0px;
+}
+.OTP-verification-page p{
+    font-size: .7rem;
+    font-weight: 700;
+    color: #999;
+    line-height: 2;
+    padding: 5px 0px 15px 0px;
+}
+.code-con{
+    display: flex;
+    gap: .4rem;
+    padding: 0px 0px 20px 0px;
+
+}
+.code-con input{
+    height: 35px;
+    width: 35px;
+    padding: 3px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    background-color: rgb(233, 229, 229);
+    outline: none;
+    border: solid .5px gray;
+    text-align: center;
+}
+
+/* Hide the number input arrows/spinners */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.OTP-verification-page h3{
+    font-size: .8rem;
+    font-weight: 700;
+    color: #999;
+    line-height: 2;
+    padding: 0px 0px 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.OTP-verification-page span{
+    color: blue;
+}
+
+.btttn{
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+    font-weight: 700;
+    width: 80%;
+    margin: 30px 0px 0px 0px;
+    border-radius: 5px;
+    border: solid 1px white;
+    background-color: #e94509;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 960px){
+
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 670px){
+    .first-section{
+        display: grid;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        grid-template-columns: 1fr;
+    }
+    .container, .container2, .container3, 
+    .container4, .container5, .container6{
+        width: 100%;
+        height: 100dvh;
+        border-radius: 10px;
+    }
+    .container2{
+        background-size: cover;
+    }
+    .container p{
+        margin-top: 13rem;
+    }
+    .welcome-con p{
+        margin-top: 6rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+
+}
